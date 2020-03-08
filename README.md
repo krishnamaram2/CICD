@@ -1,2 +1,2 @@
-# CICD
-Jenkins is used for Continuous Integration/Continuous Delivery/Continuous Deploy purpose
+# Project Title
+Jenkins is used for Continuous Integration/Continuous Delivery/Continuous Deployment purpose
