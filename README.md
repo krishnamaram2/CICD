@@ -2,8 +2,32 @@
 
 Jenkins is used for Continuous Integration/Continuous Delivery/Continuous Deployment purpose
 
+Jenkins installation and Set up
+=====================================
 
-Installation 
+https://linuxize.com/post/how-to-install-jenkins-on-centos-7/
+
+
+Step 1: install openjdk and set up environment variables
+$sudo yum install java-1.8.0-openjdk-devel
+
+Step 2: install Jenkins server
+$curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+
+$sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+$sudo yum install jenkins
+
+$sudo systemctl start jenkins
+
+$sudo systemctl enable jenkins
+
+Step 3: configure jenkins job to build and deploy war file
+
+
+
+
+Automation Installation 
 ==============================
 
 $yum update -y && yum upgrade -y
